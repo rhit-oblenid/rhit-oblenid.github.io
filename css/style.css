@@ -68,6 +68,10 @@ footer p {
     border: 5px dashed var(--accent-color);
 }
 
+#snow-cat:hover {
+    cursor: pointer;
+}
+
 #snow-cat, h1 {
     display: flex;
     justify-self: center;

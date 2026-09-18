@@ -1,17 +1,7 @@
-let logo = document.getElementById("logo");
-let logoHover = false;
+// play a meow sound when you click the kitty
+let snowCat = document.getElementById("snow-cat");
 
-function changeLogoOnHover() {
-    if (logoHover) {
-        // setAttribute(), courtesy of Mozilla Developer Network (MDN)
-        logo.setAttribute("src", "images/logo.png");
-        logoHover = false;
-    } else {
-        logo.setAttribute("src", "images/logodark.png");
-        logoHover = true;
-    }
+snowCat.onclick = () => {
+    // got this line from my test site i made a few months ago
+    new Audio("sfx/meow.mp3").play();
 }
-
-// onmouseeneter and onmouseleave, courtesy of MDN
-logo.onmouseenter = changeLogoOnHover; 
-logo.onmouseleave = changeLogoOnHover;

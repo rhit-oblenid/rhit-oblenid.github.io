@@ -1,5 +1,4 @@
-// i learned about loader scripts before i took this class, that's how i go this idea
-
+// i learned about loader scripts before i took this class, that's how i got this idea
 let navbarContainer = document.getElementById("navbar-container");
 let footerContainer = document.getElementById("footer-container");
 
@@ -48,3 +47,22 @@ function loadFooter() {
 
 loadNavbar();
 loadFooter();
+
+// change the logo when you hover
+let logo = document.getElementById("logo");
+let logoHover = false;
+
+function changeLogoOnHover() {
+    if (logoHover) {
+        // setAttribute(), courtesy of Mozilla Developer Network (MDN)
+        logo.setAttribute("src", "images/logo.png");
+        logoHover = false;
+    } else {
+        logo.setAttribute("src", "images/logodark.png");
+        logoHover = true;
+    }
+}
+
+// onmouseeneter and onmouseleave, courtesy of MDN
+logo.onmouseenter = changeLogoOnHover; 
+logo.onmouseleave = changeLogoOnHover;
