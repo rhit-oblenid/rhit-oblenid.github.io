@@ -4,7 +4,7 @@ let footerContainer = document.getElementById("footer-container");
 
 function loadNavbar() {
 
-    // TODO: find a way to load this from navbar.htlm
+    // TODO: find a way to load this from navbar.html
     let navbarContent = `
 <nav>
 
@@ -55,6 +55,7 @@ let logoHover = false;
 function changeLogoOnHover() {
     if (logoHover) {
         // setAttribute(), courtesy of Mozilla Developer Network (MDN)
+        // https://developer.mozilla.org/en-US/docs/Web/API/Element/setAttribute
         logo.setAttribute("src", "images/logo.png");
         logoHover = false;
     } else {
@@ -64,5 +65,6 @@ function changeLogoOnHover() {
 }
 
 // onmouseeneter and onmouseleave, courtesy of MDN
+// https://developer.mozilla.org/en-US/docs/Web/API/Element/mouseenter_event
 logo.onmouseenter = changeLogoOnHover; 
 logo.onmouseleave = changeLogoOnHover;
