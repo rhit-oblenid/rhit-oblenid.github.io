@@ -82,3 +82,11 @@ footer p {
 hr {
     border: 1px solid var(--light-white);
 }
+
+p a {
+    color: white;
+}
+
+p a:visited {
+    color: purple;
+}
