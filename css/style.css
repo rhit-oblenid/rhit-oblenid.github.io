@@ -88,10 +88,10 @@ p a {
 }
 
 p a:visited {
-    color: purple;
+    color: #aaaaaa;
 }
 
-.project h2, .project h3, .project p {
+.project h2, .project h3, .project p, .project a {
     display: flex;
     justify-self: center;
 }
