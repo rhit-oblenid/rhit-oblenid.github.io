@@ -83,11 +83,11 @@ hr {
     border: 1px solid var(--light-white);
 }
 
-p a {
+.project a {
     color: white;
 }
 
-p a:visited {
+.project a:visited {
     color: #aaaaaa;
 }
 
