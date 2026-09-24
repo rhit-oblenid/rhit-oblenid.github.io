@@ -90,3 +90,20 @@ p a {
 p a:visited {
     color: purple;
 }
+
+.project h2, .project h3, .project p {
+    display: flex;
+    justify-self: center;
+}
+
+.project h2:hover {
+    cursor: pointer;
+}
+
+.project img {
+    display: flex;
+    justify-self: center;
+    padding: 3px;
+    margin: 10px;
+    width: 50vw;
+}
